@@ -1,0 +1,628 @@
+/* Global body styling */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: "inter"; /* Set the font family */
+}
+
+/* Home section (background and layout) */
+.home {
+  background: #1a1a1a; /* Dark background color */
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height of the viewport */
+  background-image: url(images/background.jpg); /* Background image */
+  background-size: cover; /* Cover the entire section with the image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image repetition */
+  position: relative; /* Position relative for stacking elements */
+}
+
+/* Navbar styling (fixed at the top) */
+.navbar {
+  width: 95%; /* 95% of the screen width */
+  position: fixed; /* Fixed position on the top */
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between logo and nav items */
+  align-items: center; /* Vertically center the navbar items */
+  padding: 10px 30px; /* Padding around navbar content */
+  background-color: transparent; /* Transparent background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for navbar */
+  z-index: 99; /* Ensure navbar is above other content */
+}
+
+/* Logo in the navbar */
+.navbar .logo img {
+  width: 180px; /* Set logo width */
+  margin: 10px 0; /* Vertical margin */
+}
+
+/* Navbar links container */
+nav {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Vertically center the links */
+}
+
+/* Navbar links list */
+nav ul {
+  display: flex; /* Flexbox layout for the list */
+  justify-content: flex-end; /* Align links to the right */
+  align-items: center; /* Vertically center the list items */
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+}
+
+/* Individual navbar list item */
+nav ul li {
+  height: 50px; /* Set height for each list item */
+}
+
+/* Navbar links styling */
+nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  height: 100%; /* Make the link height the same as the list item */
+  padding: 0 20px; /* Horizontal padding for links */
+  display: flex; /* Flexbox for aligning text vertically */
+  align-items: center; /* Vertically center the link text */
+  color: #ffffff; /* White text color */
+  font-family: "Inknut Antiqua", serif; /* Set font */
+  font-size: 17px; /* Set font size */
+}
+
+/* Content section styling */
+.content {
+  width: 100%; /* Full width */
+  display: flex; /* Flexbox layout */
+  justify-content: space-around; /* Space out the content */
+  text-align: center; /* Center the text */
+  display: flex; /* Duplicate to ensure flex is applied */
+}
+
+/* Main content styling */
+.content .main-content {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Column layout */
+  text-align: justify; /* Justify the text */
+  margin-top: 150px; /* Margin from the top */
+}
+
+/* Main content header styling */
+.content h1 {
+  font-family: 'Playfair Display', serif; /* Set the font */
+  font-size: 40px; /* Set font size */
+  margin: 10px 0; /* Vertical margin */
+  color: #ffffff; /* White text color */
+}
+
+/* Highlighted text in the header */
+.content h1 span {
+  color: #00bcd4; /* Cyan color for highlighted text */
+}
+
+/* Paragraph styling in content */
+.content p {
+  font-size: 16px; /* Font size */
+  margin: 20px 0; /* Vertical margin */
+  color: #ffffff; /* White text color */
+}
+
+/* Highlight class for specific text styling */
+.content .highlight {
+  color: #ffb400; /* Yellow color */
+  font-size: 18px; /* Font size */
+}
+
+/* Button styling in content */
+.content button {
+  background: none; /* Transparent background */
+  width: 140px; /* Button width */
+  border: 2px solid white; /* White border */
+  padding: 15px 30px; /* Padding inside button */
+  color: white; /* White text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 20px 0; /* Vertical margin */
+  border-radius: 30px; /* Rounded corners */
+}
+
+/* Social icons container */
+.social-icons {
+  display: flex; /* Flexbox layout */
+  justify-content: flex-start; /* Align items to the start */
+  margin: 20px 0; /* Vertical margin */
+}
+
+/* Social icon styling */
+.social-icons a {
+  color: white; /* White color for icons */
+  font-size: 24px; /* Icon size */
+  margin: 0 10px; /* Horizontal margin between icons */
+  text-align: start; /* Align icons to the left */
+}
+
+/* Profile image section */
+.profile-img {
+  margin-top: 160px; /* Margin from the top */
+  transform: translateX(-100px); /* Offset the image to the left */
+}
+
+/* Profile image styling */
+.profile-img img {
+  border-radius: 50%; /* Make the image circular */
+  width: 380px; /* Set image width */
+  height: 380px; /* Set image height */
+  object-fit: cover; /* Ensure image covers the entire space */
+}
+
+/* Footer styling */
+footer {
+  background: #000000; /* Black background */
+  width: 100%; /* Full width */
+  height: 300px; /* Fixed height */
+  position: absolute; /* Absolute positioning */
+  transform: translateY(50px); /* Offset the footer */
+}
+
+/* Hamburger menu (hidden by default) */
+.hamburger-menu {
+  display: none; /* Hide the hamburger menu by default */
+}
+
+/* Sidebar styling (hidden by default) */
+.sidebar {
+  position: fixed; /* Fixed position on the right */
+  top: 0; /* Top of the viewport */
+  right: 0; /* Align to the right */
+  height: 100vh; /* Full height */
+  width: 250px; /* Sidebar width */
+  background-color: #ffffff; /* White background */
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); /* Shadow on the left */
+  display: none; /* Hidden by default */
+  flex-direction: column; /* Vertical layout */
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Start alignment */
+  padding-top: 10px; /* Padding from the top */
+  z-index: 1000; /* Ensure sidebar is above other content */
+  opacity: 0.8; /* Slight transparency */
+}
+
+/* Sidebar close button (positioned at the top-right) */
+.sidebar li:first-child {
+  position: absolute; /* Absolute position */
+  top: 10px; /* Top position */
+  right: 15px; /* Right position */
+  padding: 0; /* Remove padding */
+  transform: translateX(180px); /* Position the button */
+}
+
+/* Sidebar list items */
+.sidebar li {
+  width: 100%; /* Full width of the sidebar */
+  text-align: center; /* Center the text */
+}
+
+/* Sidebar links styling */
+.sidebar li a {
+  color: #000000; /* Black text color */
+  font-size: 18px; /* Font size */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  /* Hide elements on mobile */
+  .hideOnMobile {
+      display: none; /* Hide elements with this class */
+  }
+
+  /* Show hamburger menu on mobile */
+  .hamburger-menu {
+      display: flex; /* Display the hamburger menu */
+  }
+
+  /* Sidebar hidden on mobile by default */
+  .sidebar {
+      display: none; /* Hide sidebar on mobile */
+  }
+}
+/* About Section Styles */
+.about-section {
+  display: flex; /* Aligns items horizontally */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  padding: 20px; /* Adds padding around the section */
+  box-sizing: border-box; /* Ensures padding is included in total width/height */
+  background: #111111; /* Dark background color */
+}
+
+/* About Container Styles */
+.about-container {
+  display: flex; /* Flexbox for horizontal layout */
+  background-color: #1e1e1e; /* Dark background for container */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hides overflowed content */
+  max-width: 900px; /* Max width of container */
+  width: 100%; /* Full width */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* Adds shadow around the container */
+  margin-top: 30px; /* Adds space above the container */
+}
+
+/* About Photo Styles */
+.about-photo {
+  flex: 1; /* Flex item with equal space */
+  background: #222; /* Slightly lighter background for photo section */
+}
+
+.about-photo img {
+  width: 100%; /* Image takes full width */
+  height: 100%; /* Image takes full height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* About Content Styles */
+.about-content {
+  flex: 1.5; /* Gives content section more space */
+  padding: 40px; /* Adds padding */
+  display: flex; /* Flexbox for vertical alignment */
+  flex-direction: column; /* Aligns children vertically */
+  justify-content: center; /* Vertically centers content */
+}
+
+/* Heading Styles */
+.about-content h3 {
+  color: #ff4b5c; /* Red-pink color for the heading */
+  font-size: 20px; /* Font size */
+  margin-bottom: 10px; /* Margin below the heading */
+}
+
+.about-content h1 {
+  font-size: 36px; /* Font size for main title */
+  margin: 10px 0 20px 0; /* Margin around the heading */
+}
+
+.about-content h4 {
+  font-size: 22px; /* Font size for subheading */
+  color: #ccc; /* Light gray color */
+  margin-bottom: 20px; /* Margin below the subheading */
+}
+
+.about-content p {
+  font-size: 16px; /* Font size for paragraph */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 20px; /* Margin below paragraph */
+  color: #aaa; /* Light gray text color */
+}
+
+/* About Info Styles */
+.about-info p {
+  margin: 5px 0; /* Margin for each paragraph */
+  font-size: 16px; /* Font size */
+}
+
+/* Button Container Styles */
+.buttons {
+  margin-top: 20px; /* Margin above button section */
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block; /* Inline-block for button alignment */
+  text-decoration: none; /* Removes underline */
+  padding: 12px 24px; /* Padding around the button */
+  margin-right: 15px; /* Right margin for spacing */
+  border-radius: 5px; /* Rounded corners for the button */
+  font-size: 16px; /* Font size */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Primary Button Styles */
+.primary-btn {
+  background-color: #ff4b5c; /* Red-pink background */
+  color: #fff; /* White text color */
+}
+
+/* Primary Button Hover Effect */
+.primary-btn:hover {
+  background-color: #e04350; /* Darker red on hover */
+}
+
+/* Secondary Button Styles */
+.secondary-btn {
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #ff4b5c; /* Border with red-pink color */
+  color: #ff4b5c; /* Red-pink text color */
+}
+
+/* Secondary Button Hover Effect */
+.secondary-btn:hover {
+  background-color: #ff4b5c; /* Red-pink background on hover */
+  color: #fff; /* White text color on hover */
+}
+
+/* Skills Section Styles */
+#skills {
+  text-align: center; /* Centers text */
+  padding: 10px 0; /* Adds vertical padding */
+  background-color: #111111; /* Dark background */
+  color: #fff; /* White text color */
+}
+
+/* Skills Title Styles */
+#skills h2 {
+  padding-top: 50px; /* Adds top padding */
+  font-size: 36px; /* Font size */
+  margin-bottom: 40px; /* Margin below the title */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+  color: #e84e4e; /* Adds a hint of red */
+}
+
+/* Skill Container Styles */
+.skill-container {
+  display: flex; /* Flexbox layout */
+  flex-wrap: wrap; /* Allows wrapping of items */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Adds space between skill cards */
+}
+
+/* Skill Card Styles */
+.skill {
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text color */
+  width: 250px; /* Fixed width for skill cards */
+  padding: 20px; /* Padding inside the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow around the card */
+  transition: transform 0.3s ease-in-out; /* Smooth transformation effect */
+  text-align: center; /* Centers text inside the card */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover Effect for Skill Cards */
+.skill:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+}
+
+/* Skill Image Styles */
+.skill img {
+  width: 80px; /* Fixed width for images */
+  height: 80px; /* Fixed height for images */
+  margin-bottom: 20px; /* Margin below the image */
+  transition: filter 0.3s ease-in-out; /* Smooth filter transition */
+}
+
+/* Hover Effect for Skill Image */
+.skill:hover img {
+  filter: brightness(1.2); /* Increases brightness on hover */
+}
+
+/* Skill Title Styles */
+.skill h3 {
+  font-size: 22px; /* Font size for skill title */
+  margin-bottom: 15px; /* Margin below the title */
+  color: #f2f2f2; /* Light gray color */
+}
+
+/* Skill Description Styles */
+.skill p {
+  font-size: 16px; /* Font size for description */
+  color: #bbb; /* Light gray text color */
+}
+
+/* Hover Effect for Skill Description */
+.skill p:hover {
+  color: #f2f2f2; /* Changes text color when hovered */
+}
+/* Styling for the projects section */
+#projects {
+  background: #111111; /* Dark background color */
+  width: 100%; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  text-align: center; /* Center text horizontally */
+  padding: 20px 0; /* Padding on top and bottom */
+  background-color: #111111; /* Set background color again (redundant) */
+  color: #fff;  /* Set text color to white */
+}
+
+/* Styling for the main heading inside the projects section */
+#projects h2 {
+  padding-top: 50px; /* Space above the heading */
+  font-size: 36px; /* Set font size */
+  margin-bottom: 40px; /* Margin below the heading */
+  text-transform: uppercase; /* Make text uppercase */
+  font-weight: bold; /* Make the font bold */
+  color: #e84e4e; /* Set text color to a reddish shade */
+}
+
+/* Container for the project cards */
+.project-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Distribute items evenly */
+  flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+/* Styling for each individual project card */
+.project {
+  background: #222222; /* Dark background for each project card */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  margin: 20px; /* Margin around the card */
+  width: 300px; /* Fixed width for the card */
+  text-align: center; /* Center text inside the card */
+}
+
+/* Styling for the project title inside each card */
+.project h3 {
+  font-size: 24px; /* Font size for the title */
+  margin-bottom: 10px; /* Margin below the title */
+  color: #e84e4e; /* Set the title color to the same reddish shade */
+}
+
+/* Styling for images inside the project card */
+.project img {
+  width: 100%; /* Make the image fill the width of the card */
+  border-radius: 10px; /* Round the image corners */
+  margin-bottom: 20px; /* Margin below the image */
+}
+
+/* Styling for the project description */
+.project p {
+  color: #ccc; /* Light grey text color */
+  line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Styling for the "Read More" button */
+.read-more {
+  display: inline-block; /* Make the button inline with other elements */
+  background: #e84e4e; /* Reddish background color */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding inside the button */
+  border-radius: 5px; /* Rounded corners for the button */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+/* Styling for the contact section */
+.contact {
+  background: #111111; /* Dark background */
+  width: 100%; /* Full width of the viewport */
+  height: auto; /* Height adjusts based on content */
+  text-align: start; /* Align text to the left */
+  padding: 20px 0; /* Padding on top and bottom */
+  background-color: #111111; /* Dark background color again */
+  color: #fff; /* White text color */
+}
+
+/* Container for the contact section */
+.container {
+  max-width: 1200px; /* Set maximum width */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Padding inside the container */
+}
+
+/* Styling for the headings inside the contact section */
+h2 {
+  font-size: 36px; /* Font size for the headings */
+  margin-bottom: 40px; /* Margin below the heading */
+  text-transform: uppercase; /* Make text uppercase */
+  font-weight: bold; /* Bold font */
+  color: #e84e4e; /* Set heading color to reddish shade */
+  padding-top: 50px; /* Padding on top */
+}
+
+/* General paragraph styling */
+p {
+  font-size: 16px; /* Font size for paragraphs */
+  line-height: 1.5; /* Line height for readability */
+  margin-bottom: 20px; /* Margin below each paragraph */
+}
+
+/* Styling for the contact information section */
+.contact-info {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute items evenly */
+  margin-bottom: 40px; /* Margin below the section */
+}
+
+/* Styling for each individual contact info item */
+.info {
+  width: 20%; /* Set width for each item */
+}
+
+/* Styling for the title of each contact info item */
+.info h3 {
+  font-size: 20px; /* Font size for the title */
+  margin-bottom: 10px; /* Margin below the title */
+  font-weight: bold; /* Bold font for the title */
+  color: #e84e4e; /* Set title color to reddish shade */
+}
+
+/* Styling for the paragraph inside each contact info item */
+.info p {
+  font-size: 14px; /* Font size for the paragraph */
+  line-height: 1.5; /* Line height for readability */
+}
+
+/* Styling for the social media links section */
+.social-links {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  display: flex; /* Use flexbox layout */
+}
+
+/* Styling for each social media link */
+.social-links li {
+  margin-right: 10px; /* Space between list items */
+}
+
+/* Styling for each link inside social media links */
+.social-links a {
+  color: #fff; /* White text color */
+  font-size: 20px; /* Font size for the links */
+  transition: all 0.3s ease; /* Smooth transition effect on hover */
+}
+
+/* Hover effect for social media links */
+.social-links a:hover {
+  color: #e84e4e; /* Change link color to reddish on hover */
+}
+
+/* Styling for the map section */
+.map {
+  margin-bottom: 40px; /* Margin below the map */
+}
+
+/* Styling for the iframe map */
+.map iframe {
+  width: 100%; /* Make the map fill the container */
+  height: 300px; /* Set fixed height for the map */
+  border-radius: 20px; /* Rounded corners for the map */
+}
+
+/* Styling for the footer section */
+.foot {
+  background: #222222; /* Dark background for the footer */
+  border-radius: 20px; /* Rounded corners */
+  padding: 10px; /* Padding inside the footer */
+}
+
+/* Styling for the call-to-action section */
+.call-to-action {
+  text-align: center; /* Center text */
+  margin-bottom: 40px; /* Margin below the section */
+}
+
+/* Styling for the heading in the call-to-action */
+.call-to-action h3 {
+  font-size: 24px; /* Font size for the heading */
+  margin-bottom: 10px; /* Margin below the heading */
+  font-weight: bold; /* Bold font */
+  color: #e84e4e; /* Set color to reddish shade */
+}
+
+/* Styling for the paragraph in the call-to-action section */
+.call-to-action p {
+  font-size: 16px; /* Font size for the paragraph */
+  line-height: 1.5; /* Line height for readability */
+}
+
+/* Styling for the footer */
+.footer {
+  text-align: center; /* Center text */
+}
+
+/* Styling for paragraphs in the footer */
+.footer p {
+  font-size: 14px; /* Font size for footer paragraphs */
+  line-height: 1.5; /* Line height for readability */
+  margin-bottom: 10px; /* Margin below the paragraph */
+}
+
+/* Styling for the social media links in the footer */
+.footer .social-links {
+  margin-top: 20px; /* Margin on top of the social links */
+  display: flex; /* Use flexbox layout */
+  justify-content: center; /* Center the links */
+}

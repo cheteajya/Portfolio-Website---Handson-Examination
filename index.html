@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome CSS for using icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <!-- Link to Google Fonts for custom fonts (Roboto and Playfair Display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet"/>
+    <!-- Script to load Font Awesome JavaScript kit for additional functionality -->
+    <script src="https://kit.fontawesome.com/25fa6bbdfe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="home" class="home">
+        <!-- Navbar section -->
+        <header class="navbar">
+            <div class="logo">
+                <!-- Logo image -->
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <!-- Sidebar for mobile view -->
+                <ul class="sidebar">
+                    <!-- Close button for the sidebar -->
+                    <li onclick="hideSide()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
+                    <!-- Navigation links for the sidebar -->
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- Navigation links for larger screens (Desktop) -->
+                <ul>
+                    <!-- Links visible only on larger screens (not on mobile) -->
+                    <li class="hideOnMobile"><a href="#home">Home</a></li>
+                    <li class="hideOnMobile"><a href="#about">About</a></li>
+                    <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+                    <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                    <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                    <!-- Hamburger menu for mobile view -->
+                    <li class="hamburger-menu" onclick="showSidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- Main content area -->
+        <div class="content">
+            <div class="main-content">
+                <!-- Highlight text -->
+                <p class="highlight">Get ready to start work</p>
+                <!-- Main heading with name and title -->
+                <h1>I'm <span>Jomel Tomeo</span><br/>Web Developer</h1>
+                <!-- Description paragraph -->
+                <p>With every line of code, I strive to bring ideas to life<br>and make them accessible to everyone</p>
+                <!-- Button to hire -->
+                <button>Hire me</button>
+                <!-- Social media icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <!-- Profile image section -->
+            <div class="profile-img">
+                <!-- Profile image -->
+                <img src="images/profile.png">
+            </div>
+        </div>
+    </div>
+        <!-- About Section -->
+    <div id="about" class="about-section">
+        <!-- Container for the About section content -->
+        <div class="about-container">
+            <!-- About photo (Profile image) -->
+            <div class="about-photo">
+                <img src="images/about.png" alt="Profile Photo">
+            </div>
+            <!-- About content (Text and links) -->
+            <div class="about-content">
+                <!-- Heading for the About section -->
+                <h3>About Me</h3>
+                <!-- Main heading for the section -->
+                <h1>Why hire me for your next project?</h1>
+                <!-- Subtitle for the profession -->
+                <h4>UI/UX Designer & Web Developer</h4>
+                <!-- Paragraph describing skills and expertise -->
+                <p>With a passion for crafting intuitive and visually compelling digital experiences, I bring a unique blend of creativity and technical expertise to every project. My approach prioritizes user-centric design, ensuring seamless interactions and engaging interfaces that drive results.</p>
+                <!-- Personal information section -->
+                <div class="about-info">
+                    <p><strong>Name:</strong> Jomel Tomeo</p>
+                    <p><strong>Birthday:</strong> 05 January 2005</p>
+                    <p><strong>Location:</strong> Philippines, Quezon Province</p>
+                    <p><strong>Email:</strong> jomel.tomeo.16@gmail.com</p>
+                </div>
+                <!-- Buttons to download CV and learn more -->
+                <div class="buttons">
+                    <a href="#" class="btn primary-btn">Download CV</a>
+                    <a href="#" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills Section -->
+    <div id="skills" class="skills">
+        <!-- Heading for the Skills section -->
+        <h2>Skills</h2>
+        <!-- Container for skill items -->
+        <div class="skill-container">
+            <!-- Skill Item 1: HTML5 -->
+            <div class="skill">
+                <img src="images/html.png" alt="HTML5 Icon"> <!-- Icon for HTML5 -->
+                <h3>HTML5</h3> <!-- Skill title -->
+                <p>HTML5 is the foundation of web development, providing the structure and content for web pages, making them interactive and accessible.</p> <!-- Skill description -->
+            </div>
+            <!-- Skill Item 2: CSS3 -->
+            <div class="skill">
+                <img src="images/css3.png" alt="CSS3 Icon"> <!-- Icon for CSS3 -->
+                <h3>CSS3</h3> <!-- Skill title -->
+                <p>CSS3 is used to style the layout of web pages, enhancing design with responsive, adaptive, and visually appealing elements.</p> <!-- Skill description -->
+            </div>
+            <!-- Skill Item 3: JavaScript -->
+            <div class="skill">
+                <img src="images/javascript.png" alt="JavaScript Icon"> <!-- Icon for JavaScript -->
+                <h3>JavaScript</h3> <!-- Skill title -->
+                <p>JavaScript allows you to add dynamic features and interactivity to websites, such as animations, form validation, and event handling.</p> <!-- Skill description -->
+            </div>
+            <!-- Skill Item 4: React -->
+            <div class="skill">
+                <img src="images/react.png" alt="React Icon"> <!-- Icon for React -->
+                <h3>React</h3> <!-- Skill title -->
+                <p>React is a JavaScript framework for building user interfaces, enabling the development of complex web applications with reusable components.</p> <!-- Skill description -->
+            </div>
+            <!-- Skill Item 5: Bootstrap -->
+            <div class="skill">
+                <img src="images/bootstrap.png" alt="Bootstrap Icon"> <!-- Icon for Bootstrap -->
+                <h3>Bootstrap</h3> <!-- Skill title -->
+                <p>Bootstrap is a popular front-end framework for developing responsive websites quickly, with built-in CSS and JavaScript components.</p> <!-- Skill description -->
+            </div>
+            <!-- Skill Item 6: WordPress -->
+            <div class="skill">
+                <img src="images/wordpress.png" alt="WordPress Icon"> <!-- Icon for WordPress -->
+                <h3>WordPress</h3> <!-- Skill title -->
+                <p>WordPress is a content management system (CMS) that powers websites, allowing for easy content updates and customization through plugins and themes.</p> <!-- Skill description -->
+            </div>
+            <!-- Skill Item 7: Node.js -->
+            <div class="skill">
+                <img src="images/node.png" alt="Node.js Icon"> <!-- Icon for Node.js -->
+                <h3>Node.js</h3> <!-- Skill title -->
+                <p>Node.js is a JavaScript runtime environment that allows for building scalable server-side applications and APIs.</p> <!-- Skill description -->
+            </div>
+            <!-- Skill Item 8: Sass -->
+            <div class="skill">
+                <img src="images/sass.png" alt="Sass Icon"> <!-- Icon for Sass -->
+                <h3>Sass</h3> <!-- Skill title -->
+                <p>Sass is a CSS preprocessor that enhances CSS with features like variables, mixins, and nested rules for more efficient styling.</p> <!-- Skill description -->
+            </div>
+        </div>
+    </div>
+    <!-- Projects Section -->
+    <div id="projects" class="projects">
+        <!-- Heading for the Projects section -->
+        <h2>Projects</h2>
+        <!-- Container for the individual projects -->
+        <div class="project-container">
+            <!-- Project 1: Gymnasium Mobile App -->
+            <div class="project">
+                <h3>Gymnasium Mobile App</h3> <!-- Project title -->
+                <img src="images/project1.png" alt="Project 1"> <!-- Image representing the project -->
+                <!-- Description of the project -->
+                <p>A mobile app designed for a gymnasium, offering easy access to workout plans, class schedules, and trainer profiles. The app focuses on a clean and motivating user interface, with features that allow users to track their fitness goals, book classes, and connect with fellow gym members.</p>
+                <!-- Link to explore the project -->
+                <a href="#" class="read-more">Explore</a>
+            </div>
+            <!-- Project 2: E-commerce Mobile App -->
+            <div class="project">
+                <h3>E-commerce Mobile App</h3> <!-- Project title -->
+                <img src="images/project2.png" alt="Project 2"> <!-- Image representing the project -->
+                <!-- Description of the project -->
+                <p>This e-commerce mobile app provides a seamless shopping experience with a user-friendly interface. Designed for easy navigation, it allows users to browse products, filter by categories, and make secure purchases. The app also includes features like a personalized shopping cart and product recommendations based on user preferences.</p>
+                <!-- Link to explore the project -->
+                <a href="#" class="read-more">Explore</a>
+            </div>
+            <!-- Project 3: Restaurant Mobile App -->
+            <div class="project">
+                <h3>Restaurant Mobile App</h3> <!-- Project title -->
+                <img src="images/project3.png" alt="Project 3"> <!-- Image representing the project -->
+                <!-- Description of the project -->
+                <p>A mobile app tailored for a restaurant, simplifying the ordering process and enhancing customer interaction. Features include browsing the menu, placing orders for delivery or pickup, and making reservations. The app also offers real-time updates on order status and integrates promotions and special offers to keep customers engaged.</p>
+                <!-- Link to explore the project -->
+                <a href="#" class="read-more">Explore</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- Contact Section -->
+    <div id="contact" class="contact">
+        <!-- Main container for contact information -->
+        <div class="container">
+            <!-- Contact section heading -->
+            <h2>Get in Touch</h2>
+            <!-- A brief message inviting the user to contact -->
+            <p>Drop me a line, <br>I am looking forward to meet you.</p>
+            
+            <!-- Container for contact details like address, email, phone, and social links -->
+            <div class="contact-info">
+                <!-- Contact information: Address -->
+                <div class="info">
+                    <h3>Based in Philippines</h3> <!-- Title for location -->
+                    <p>Quezon Province, Lucena City</p> <!-- Location details -->
+                </div>
+                <!-- Contact information: Email -->
+                <div class="info">
+                    <h3>E-mail</h3> <!-- Title for email -->
+                    <p>jomel.tomeo.16@gmail.com</p> <!-- Email address -->
+                </div>
+                <!-- Contact information: Phone -->
+                <div class="info">
+                    <h3>Phone</h3> <!-- Title for phone -->
+                    <p>+639163863779</p> <!-- Phone number -->
+                </div>
+                <!-- Contact information: Social media links -->
+                <div class="info">
+                    <h3>Follow me</h3> <!-- Title for social media links -->
+                    <ul class="social-links"> <!-- Unordered list for social media links -->
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> <!-- Facebook -->
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li> <!-- Instagram -->
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li> <!-- Twitter -->
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li> <!-- YouTube -->
+                    </ul>
+                </div>
+            </div>
+            <!-- Embedded Google Map showing location -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!-- Embed map with iframe -->
+            </div>
+
+            <!-- Footer section -->
+            <div class="foot">
+                <!-- Call-to-action block encouraging users to get in touch -->
+                <div class="call-to-action">
+                    <h3>Have an idea? Let's build it!</h3> <!-- Call to action heading -->
+                    <p>jomel.tomeo.16@gmail.com</p> <!-- Email for contact -->
+                    <p>www.jseet.com</p> <!-- Website link -->
+                </div>
+
+                <!-- Footer with copyright and creator info -->
+                <div class="footer">
+                    <p>&copy; 2024 All Rights Reserved</p> <!-- Copyright notice -->
+                    <p>MOOD is a premium portfolio WordPress theme created by MaxSparrow</p> <!-- Theme creator info -->
+                    <!-- Social media links in the footer -->
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li> <!-- Facebook -->
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li> <!-- Twitter -->
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li> <!-- Instagram -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    // Function to show the sidebar
+    function showSidebar() {
+        // Selects the first element with the class 'sidebar'
+        const sidebar = document.querySelector('.sidebar');
+        // Sets the sidebar's display style to 'flex', making it visible
+        sidebar.style.display = 'flex';
+    }
+
+    // Function to hide the sidebar
+    function hideSide() {
+        // Selects the first element with the class 'sidebar'
+        const sidebar = document.querySelector('.sidebar');
+        // Sets the sidebar's display style to 'none', hiding it
+        sidebar.style.display = 'none';
+    }
+    </script>
+</body>
+</html>
